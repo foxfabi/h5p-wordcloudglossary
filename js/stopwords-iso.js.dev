@@ -1,0 +1,3 @@
+var stop_words = {
+  "de":["und", "auch", "für"]
+}

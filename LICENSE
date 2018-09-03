@@ -1,14 +1,4 @@
-H5P WordCloud Glossary
-=========================
-
-The H5P WordCloud Glossary let's you create a glossary from an image composed of words,
-in which the size of each word indicates its frequency or importance.
-
-There are many settings to visualize the worldcloud, like google font type, max amount of words and colors to use.
-
-## License
-
-(The MIT License)
+MIT License
 
 Copyright (c) 2018 fabforge, Fabian Dennler
 

@@ -1,0 +1,14 @@
+.wordcloud-canvas {
+  width: 100%;
+  margin: 0 auto;
+  background: #cdcdcd;
+}
+.created-word {
+  font-weight: bold;
+}
+.glossary-description {
+  width: 100%;
+}
+#h5p-wordcloud-glossary {
+  padding: 2%;
+}

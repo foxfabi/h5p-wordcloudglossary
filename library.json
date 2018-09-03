@@ -1,0 +1,53 @@
+{
+  "title": "WordCloud Glossary",
+  "description": "Let's create a glossary from an image composed of words, in which the size of each word indicates its frequency or importance.",
+  "majorVersion": 1,
+  "minorVersion": 0,
+  "patchVersion": 0,
+  "runnable": 1,
+  "author": "fabforge, Fabian Dennler (foxfabi)",
+  "license": "MIT",
+  "machineName": "H5P.WordCloudGlossary",
+  "fullscreen": 0,
+  "embedTypes": [
+    "div"
+  ],
+  "preloadedJs": [
+    {
+      "path": "js/stopwords-iso.js"
+    },
+    {
+      "path": "js/generator.js"
+    },
+    {
+      "path": "js/wordcloudglossary.js"
+    },
+    {
+      "path": "js/word-instance.js"
+    }
+  ],
+  "preloadedCss": [
+    {
+      "path": "css/wordcloudglossary.css"
+    }
+  ],  
+  "preloadedDependencies": [
+    {
+      "machineName": "H5P.JoubelUI",
+      "majorVersion": 1,
+      "minorVersion": 2
+    }
+  ],
+  "editorDependencies": [
+    {
+      "machineName": "H5PEditor.ColorSelector",
+      "majorVersion": 1,
+      "minorVersion": 0
+    },
+    {
+      "machineName": "H5PEditor.SelectToggleFields",
+      "majorVersion": 1,
+      "minorVersion": 1
+    }
+  ]
+}

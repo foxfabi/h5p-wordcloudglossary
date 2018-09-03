@@ -1,0 +1,151 @@
+[
+  {
+    "name": "intro",
+    "type": "text",
+    "label": "Intro",
+    "importance": "high",
+    "description": "The intro text (maximum 100 characters)",
+    "default": "Describe the words displayed in the tag cloud. Click on it to add a word to your glossary.",
+    "maxLength": 100,
+    "optional": true
+  },
+  {
+    "name": "input",
+    "type": "text",
+    "label": "Text to parse",
+    "widget": "textarea",
+    "importance": "high",
+    "description": "Paste your text!",
+    "optional": true
+  },
+  {
+    "name": "settings",
+    "type": "group",
+    "label": "Word Cloud Settings",
+    "importance": "low",
+    "common": true,
+    "fields": [
+      {
+        "name": "font",
+        "label": "Google Font to use",
+        "description": "Name the google font (https://fonts.google.com/) to use in the word cloud.", 
+        "importance": "high",
+        "type": "text",
+        "default": "Frijole"
+      },
+      {
+        "name": "shape",
+        "description": "The shape of the \"cloud\" to draw.",
+        "label": "Shape",
+        "importance": "high",
+        "widget": "selectToggleFields",
+        "type": "select",
+        "options": [
+          {
+            "value": "circle",
+            "label": "Circle "
+          },
+          {
+            "value": "cardioid",
+            "label": "Cardioid"
+          },
+          {
+            "value": "square",
+            "label": "Square"
+          },
+          {
+            "value": "triangle",
+            "label": "Triangle"
+          },
+          {
+            "value": "star",
+            "label": "Star"
+          },
+          {
+            "value": "pentagon",
+            "label": "Pentagon"
+          },
+          {
+            "value": "diamond",
+            "label": "Diamond"
+          }
+        ],
+        "default": "pentagon"
+      },
+      {
+        "name": "leftColor",
+        "label": "Left color",
+        "importance": "medium",
+        "type": "text",
+        "optional": true,
+        "default": "ffaa33",
+        "widget": "colorSelector",
+        "description": "Left color of interpolation."
+      },
+      {
+        "name": "rightColor",
+        "label": "Right color",
+        "importance": "medium",
+        "type": "text",
+        "optional": true,
+        "default": "33aaff",
+        "widget": "colorSelector",
+        "description": "Right color of interpolation."
+      },
+      {
+        "name": "max",
+        "type": "number",
+        "label": "Number of words",
+        "description": "Maximum of words to use in the word cloud.",
+        "min": 5,
+        "max": 100,
+        "step": 1,
+        "default": 50
+      },
+      {
+        "name": "weightFactor",
+        "type": "number",
+        "label": "Weight factor",
+        "description": "Weight factor for calculating word size in the word cloud.",
+        "min": 1,
+        "decimals": 3,
+        "max": 10,
+        "default": 2.122
+      },
+      {
+        "name": "useStopWords",
+        "type": "boolean",
+        "label": "Filter ISO stop words",
+        "description": "Enable to remove stop words from input. Will slow down tagcloud generator.",
+        "default": false
+      }
+    ]
+  },
+  {
+    "name": "UI",
+    "type": "group",
+    "label": "User interface translations",
+    "importance": "low",
+    "common": true,
+    "fields": [
+      {
+        "name": "create",
+        "label": "Create",
+        "importance": "medium",
+        "type": "text",
+        "description": "Text for \"Create\"-button.",
+        "default": "Create",
+        "optional": false
+      },
+      {
+        "name": "defineWordPlaceholder",
+        "label": "Add your word description",
+        "importance": "medium",
+        "type": "text",
+        "description": "Default Text for word description field",
+        "default": "Add your word description",
+        "optional": false
+      }
+    ]
+  }    
+]
